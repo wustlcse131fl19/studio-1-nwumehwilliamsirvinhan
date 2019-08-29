@@ -13,6 +13,16 @@ public class Ordered {
 		int y = ap.nextInt("Value for y?");
 		int z = ap.nextInt("Value for z?");
 
+		boolean xGreaterThanY = ( x >= y);
+		boolean yGreaterThanZ = ( y >= z);
+		boolean xLessThanY = ( x <= y);
+		boolean yLessThanZ = ( y <= z);
+
+		boolean isOrdered = ( xGreaterThanY && yGreaterThanZ || xLessThanY && yLessThanZ ); // this equation compares the inputs x, y, and z as described in the variables above
+
+		System.out.print(isOrdered);
+
+
 	}
 
 }
